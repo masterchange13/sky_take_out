@@ -104,4 +104,15 @@ public class EmployeeServiceImpl implements EmployeeService {
         return new PageResult(total, result);
     }
 
+    public void startOrStop(Integer status, long id) {
+
+        // 使用employee对象接收参数，可以使update方法更通用
+        Employee employee = Employee.builder()
+                .status(status)
+                .id(id)
+                .build();
+
+        employeeMapper.update(employee);
+    }
+
 }
