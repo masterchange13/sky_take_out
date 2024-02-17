@@ -12,3 +12,7 @@ sky:
     endpoint: "dasdasfds"
     access-key-id: "dasdsaff"
     secret-access-key: "ffffffff"
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
